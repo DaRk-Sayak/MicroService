@@ -16,6 +16,6 @@ public class CustomerRestController {
     private BankRestConsumer bankRestConsumer;
     @GetMapping("/allBanks")
     public List<Bank> getAll(){
-        return bankRestConsumer.getAll();
+        return bankRestConsumer.getAllBanks();
     }
 }

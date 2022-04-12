@@ -9,5 +9,5 @@ import java.util.List;
 @FeignClient(name = "BANK-SERVICE")
 public interface BankRestConsumer {
     @GetMapping("/getLocation")
-    public List<Bank> getAll();
+    public List<Bank> getAllBanks();
 }
