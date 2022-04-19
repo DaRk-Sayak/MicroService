@@ -8,6 +8,6 @@ import java.util.List;
 
 @FeignClient(name = "BANK-SERVICE")
 public interface BankRestConsumer {
-    @GetMapping("/getLocation")
+    @GetMapping("/Bank/getLocation")
     public List<Bank> getAllBanks();
 }

@@ -1,0 +1,15 @@
+server:
+  port: 9300
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: Bank
+          uri: http://localhost:9000/
+          predicates:
+            - Path=/Bank/**
+        - id: Customer
+          uri: http://localhost:9090/
+          predicates:
+            - Path=/customer/**
